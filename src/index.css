@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.profileIcon {
+  @apply after:content-[""] after:w-[10px] after:h-[10px] after:bg-salmon after:rounded-full after:inline-block after:top-[5px] after:right-0 after:absolute relative
+}
+
+.slider {
+  @apply w-full outline-none bg-darkGray appearance-none mx-4 h-[1px] 
+}
+
+.slider::-webkit-slider-thumb {
+    @apply appearance-none bg-white w-4 h-4 rounded-full shadow-md animate-slide cursor-grab active:cursor-grabbing mt-[-8px];
+}
+
+h2 {
+  @apply text-[#002D67]
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  @apply text-black
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+button,
+a {
+  color: inherit;
+}
+
+select,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input,
+button,
+textarea {
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type='submit'] {
+  cursor: pointer;
+}
