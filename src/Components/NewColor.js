@@ -1,12 +1,16 @@
-import Color from "./Color";
+import Color from './CurrentColor'
 
-const NewColor = ({func}) => {
-  
+const NewColor = ({ func }) => {
   return (
-    <button 
-      onClick={()=>{func("#000000")}}
+    <button
+      onClick={() => {
+        func('#000000')
+      }}
       className="w-7 h-7 rounded-full bg-white"
-    >+</button>);
+    >
+      +
+    </button>
+  )
 }
- 
-export default NewColor;
+
+export default NewColor
